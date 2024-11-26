@@ -1,0 +1,107 @@
+$Bright-Yellow:hsl(71, 73%, 54%);
+$Cyan:hsl(179, 62%, 43%);
+$Light-Gray:hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+@mixin font-family($fontWeight:400){
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $fontWeight;
+  font-style: normal;
+}
+
+body{
+    background-color:$Light-Gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color:white ;
+    border-radius:10px ;
+    max-width: 700px;
+}
+.top-side{
+     padding: 20px;
+     margin-left: 10px;
+
+     h1{
+        color: $Cyan;
+        @include font-family($fontWeight:700);
+        font-size:20px;
+         
+     }
+     .prg-text{
+        color: $Bright-Yellow;
+        @include font-family($fontWeight:700)
+     }
+     .text{
+        word-wrap: break-word;
+        color: $Grayish-Blue;
+        @include font-family($fontWeight:400)
+     }
+}
+.bottom-side{
+    display: flex;
+    @include font-family($fontWeight:400);
+    .left-side{
+        min-width:300px;
+        padding: 30px;
+        background-color: $Cyan;
+        color: $Light-Gray;
+        font-size: 16px;
+
+    .first-parg{
+        @include font-family($fontWeight:700);
+
+
+         
+    }
+    .second-parg{
+        color:rgba($color: $Light-Gray, $alpha: 0.55);
+         font-size: 16px;
+        span{
+            @include font-family($fontWeight:700);
+            color:$Light-Gray;
+            font-size: 30px;
+        }
+    }
+   
+    button{
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        background-color: $Bright-Yellow;
+        padding: 16px;
+        width:80% ;
+        box-shadow: 0 10px 16px rgb(63, 136, 155);
+        color: $Light-Gray;
+        font-weight: bold;
+        
+
+    }
+
+    }
+    .right-side{
+        padding: 30px 100px 30px 30px;
+        color: $Light-Gray;
+        background-color:hsl(179, 62%, 43%,0.8);
+        .first-parg{
+            @include font-family($fontWeight:700);
+        }
+
+    }
+}
+@media only screen and (max-width: 500px){
+     body{
+        padding: 50px;
+     }
+   
+    .bottom-side{
+        flex-wrap: wrap;
+        .left-side{
+            width: 100%;
+        }
+    }
+}

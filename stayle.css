@@ -1,0 +1,108 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.top-side {
+  padding: 20px;
+  margin-left: 10px;
+}
+.top-side h1 {
+  color: hsl(179, 62%, 43%);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.top-side .prg-text {
+  color: hsl(71, 73%, 54%);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.top-side .text {
+  word-wrap: break-word;
+  color: hsl(218, 22%, 67%);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bottom-side {
+  display: flex;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.bottom-side .left-side {
+  min-width: 300px;
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  font-size: 16px;
+}
+.bottom-side .left-side .first-parg {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.bottom-side .left-side .second-parg {
+  color: rgba(229, 239, 245, 0.55);
+  font-size: 16px;
+}
+.bottom-side .left-side .second-parg span {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: hsl(204, 43%, 93%);
+  font-size: 30px;
+}
+.bottom-side .left-side button {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  padding: 16px;
+  width: 80%;
+  box-shadow: 0 10px 16px rgb(63, 136, 155);
+  color: hsl(204, 43%, 93%);
+  font-weight: bold;
+}
+.bottom-side .right-side {
+  padding: 30px 100px 30px 30px;
+  color: hsl(204, 43%, 93%);
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+.bottom-side .right-side .first-parg {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 50px;
+  }
+  .bottom-side {
+    flex-wrap: wrap;
+  }
+  .bottom-side .left-side {
+    width: 100%;
+  }
+}/*# sourceMappingURL=stayle.css.map */
